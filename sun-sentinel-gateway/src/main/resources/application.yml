@@ -1,0 +1,11 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: sentinel-gateway
+  cloud:
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          lower-case-service-id: true
