@@ -3,11 +3,13 @@ package com.farmer.riskkie.config;
 
 import com.farmer.riskkie.utils.KieUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.drools.core.impl.KnowledgeBaseImpl;
 import org.kie.api.KieBase;
 import org.kie.api.KieServices;
 import org.kie.api.builder.*;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.StatelessKieSession;
 import org.kie.internal.io.ResourceFactory;
 import org.kie.spring.KModuleBeanFactoryPostProcessor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -73,11 +75,12 @@ public class DroolsAutoConfiguration {
         return kieContainer().getKieBase();
     }
 
+
+
     @Bean
-    @ConditionalOnMissingBean(KieSession.class)
-    public KieSession kieSession() throws IOException {
-        KieSession kieSession = kieContainer().newKieSession();
-        return kieSession;
+    @ConditionalOnMissingBean(StatelessKieSession.class)
+    public StatelessKieSession statelessKieSession() throws IOException {
+        return kieContainer().newStatelessKieSession();
     }
 
     @Bean

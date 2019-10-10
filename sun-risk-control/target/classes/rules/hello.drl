@@ -1,13 +1,14 @@
 package rules;
 import com.farmer.riskkie.domain.Message;
+import  com.farmer.riskkie.utils.RulerLogUtil;
 dialect  "mvel"
 
-rule "Hello World"
+rule "hello"
     dialect "mvel"
     when
         m : Message(status.equals(Message.HELLO), message : message )
     then
-        System.out.println( message);
+        RulerLogUtil.showLog(message);
     modify ( m ) { message = "Goodbye cruel world",status = Message.GOODBYE };
 end
 

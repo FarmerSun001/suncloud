@@ -1,11 +1,17 @@
 package com.farmer.riskkie;
 
 import com.farmer.riskkie.domain.Message;
+import com.farmer.riskkie.sevice.KieService;
 import com.farmer.riskkie.utils.KieUtils;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.kie.api.KieServices;
+import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.StatelessKieSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -22,21 +28,24 @@ import javax.annotation.Resource;
 @SpringBootTest(classes = {SunRiskKieApplication.class})
 public class ApplicationTest {
 
+//    @Autowired
+//    KieService kieService;
     @Resource
-    KieSession kieSession;
+    KieContainer kieContainer;
+
     @Test
-    public void testRelus(){
-        // load up the knowledge base
-/*        KieServices ks = KieServices.Factory.get();
-        KieContainer kContainer = KieUtils.getKieContainer();*/
-//        KieSession kSession = KieUtils.getKieSession();
+    public void testRelus() {
+//        KieServices kieServices = KieServices.get();
+//        KieContainer kieContainer = kieServices.getKieClasspathContainer();
+        StatelessKieSession kieSession = kieContainer.newStatelessKieSession();
         // go !
         Message message = new Message();
         message.setMessage("Hello World");
         message.setStatus(Message.HELLO);
-        kieSession.insert(message);//插入
+ /*       kieSession.insert(message);//插入
         kieSession.fireAllRules();//执行规则
-        kieSession.dispose();
-        log.info("规则返回值{}",message.getMessage());
+        kieSession.dispose();*/
+        kieSession.execute(message);
+        log.info("规则返回值{}", message.getMessage());
     }
 }
