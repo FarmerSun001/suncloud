@@ -1,0 +1,6 @@
+com\farmer\riskkie\sevice\KieService.class
+com\farmer\riskkie\utils\KieUtils.class
+com\farmer\riskkie\domain\Message.class
+com\farmer\riskkie\config\DroolsAutoConfiguration$1.class
+com\farmer\riskkie\config\DroolsAutoConfiguration.class
+com\farmer\riskkie\SunRiskKieApplication.class

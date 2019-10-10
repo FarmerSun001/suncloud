@@ -11,6 +11,7 @@ public class SunSentinelGatewayApplicationTests {
 
     @Test
     public void contextLoads() {
+        System.out.println("fkjsjfkdsjlf");
     }
 
 }
