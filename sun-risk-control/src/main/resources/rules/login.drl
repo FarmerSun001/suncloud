@@ -1,0 +1,20 @@
+package rulers;
+
+import com.farmer.riskkie.domain.LoginEvent
+import com.farmer.riskkie.service.DimensionService
+import com.farmer.riskkie.domain.EnumeTimeInterval;
+import com.farmer.riskkie.utils.RulerLogUtil
+
+global DimensionService dimensionService
+
+rule "login"
+    lock-on-active true
+
+    when
+        event:LoginEvent()
+    then
+  int count  = dimensionService.distinctCount(event,new String[]{LoginEvent.OPERATEIP},EnumeTimeInterval.LASTSECOND,LoginEvent.MOBILE);
+        if(event.addScore(count,20,10,1)){
+            RulerLogUtil.showLog("近一分钟内同ip出现多个mobile,count="+count);
+        }
+     end

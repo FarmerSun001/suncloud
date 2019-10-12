@@ -1,18 +1,15 @@
 package com.farmer.riskkie;
 
+import com.farmer.riskkie.controller.LoginController;
 import com.farmer.riskkie.domain.Message;
-import com.farmer.riskkie.sevice.KieService;
-import com.farmer.riskkie.utils.KieUtils;
-import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
-import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.StatelessKieSession;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
@@ -28,10 +25,14 @@ import javax.annotation.Resource;
 @SpringBootTest(classes = {SunRiskKieApplication.class})
 public class ApplicationTest {
 
-//    @Autowired
+    //    @Autowired
 //    KieService kieService;
     @Resource
     KieContainer kieContainer;
+    @Resource
+    StringRedisTemplate stringRedisTemplate;
+    @Resource
+    LoginController loginController;
 
     @Test
     public void testRelus() {
@@ -47,5 +48,27 @@ public class ApplicationTest {
         kieSession.dispose();*/
         kieSession.execute(message);
         log.info("规则返回值{}", message.getMessage());
+    }
+
+    @Test
+    public void testRedis() {
+        stringRedisTemplate.opsForValue().set("test", "测试Redis");
+
+        String test = (String) stringRedisTemplate.opsForValue().get("test");
+        log.info("测试Redis:{}", test);
+    }
+
+    @Test
+    public void testLogin() {
+        for (int i = 0; i < 100; i++) {
+            if (i / 10 == 5) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            loginController.login("192.168.12.205", "18588205431" + i);
+        }
     }
 }

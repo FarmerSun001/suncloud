@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e489152e-c098-44ef-bec3-8dde28ecdbcc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/utils/RulerLogUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/RedisDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/BaseEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/EnumeSence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/EnumeTimeInterval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/LoginEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/service/DimensionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sun-risk-control/src/main/resources/rules/login.drl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sun-risk-control/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/config/DroolsAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/config/DroolsAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/sevice/KieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/sevice/KieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/src/main/resources/rules/hello.drl" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/src/main/resources/rules/hello.drl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/sevice/KieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/service/KieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sun-risk-control/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sun-risk-control/src/test/java/com/farmer/riskkie/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/src/test/java/com/farmer/riskkie/ApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/target/classes/rules/hello.drl" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/target/classes/rules/hello.drl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/target/sun-risk-control-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/target/sun-risk-control-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/target/surefire-reports/TEST-com.farmer.riskkie.ApplicationTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sun-risk-control/target/surefire-reports/com.farmer.riskkie.ApplicationTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sun-risk-control/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sun-risk-control/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,94 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/sevice/KieService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="42" column="31" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="31" />
-              <folding>
-                <element signature="e#2913#2914#0" expanded="true" />
-                <element signature="e#2960#2961#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/drools/drools-core/7.22.0.Final/drools-core-7.22.0.Final.jar!/org/drools/core/impl/StatelessKnowledgeSessionImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="272" column="20" selection-start-line="272" selection-start-column="12" selection-end-line="272" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/kie/kie-api/7.22.0.Final/kie-api-7.22.0.Final.jar!/org/kie/api/runtime/rule/StatelessRuleSession.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Java/jdk1.8.0_212/src.zip!/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/test/java/com/farmer/riskkie/ApplicationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/kie/kie-api/7.22.0.Final/kie-api-7.22.0.Final.jar!/org/kie/api/runtime/CommandExecutor.class">
+        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/BaseEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/utils/RulerLogUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="33" />
-              <folding>
-                <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/config/DroolsAutoConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1153">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,10 +60,103 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/resources/rules/hello.drl">
+        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/service/DimensionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="449">
+              <caret line="60" column="49" lean-forward="true" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3098#3099#0" expanded="true" />
+                <element signature="e#3172#3173#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/EnumeTimeInterval.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <folding>
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/resources/rules/login.drl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/RedisDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="797">
+              <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.10.RELEASE/spring-data-redis-2.1.10.RELEASE.jar!/org/springframework/data/redis/core/StringRedisTemplate.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/scripting/support/StaticScriptSource.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/test/java/com/farmer/riskkie/ApplicationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/LoginEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,6 +167,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Yaml" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -164,6 +176,7 @@
     <findStrings>
       <find>Greenwich.SR3</find>
       <find>KieSession</find>
+      <find>redistemp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,13 +205,22 @@
         <option value="$PROJECT_DIR$/sun-sentinel-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/sun-sentinel-gateway/src/test/java/com/farmer/gateway/SunSentinelGatewayApplicationTests.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/sun-risk-control/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/sun-risk-control/pom.xml" />
         <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/utils/RulerLogUtil.java" />
         <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/config/DroolsAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/sun-risk-control/src/main/resources/rules/hello.drl" />
-        <option value="$PROJECT_DIR$/sun-risk-control/src/test/java/com/farmer/riskkie/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/EnumeSence.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/EnumeTimeInterval.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/pom.xml" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/sevice/DimensionService.java" />
         <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/sevice/KieService.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/RedisDao.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/LoginEvent.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/BaseEvent.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/service/DimensionService.java" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/main/resources/rules/login.drl" />
+        <option value="$PROJECT_DIR$/sun-risk-control/src/test/java/com/farmer/riskkie/ApplicationTest.java" />
       </list>
     </option>
   </component>
@@ -324,6 +346,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="riskkie" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="suncloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="suncloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sun-risk-control" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="riskkie" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -334,17 +366,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="riskkie" type="462c0819:PsiDirectoryNode" />
-              <item name="sevice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="suncloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="suncloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sun-risk-control" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="riskkie" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="suncloud" type="b2602c69:ProjectViewProjectNode" />
@@ -436,21 +458,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationTest.testRelus">
-    <configuration name="ApplicationTest.testRelus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ApplicationTest.testLogin">
+    <configuration name="ApplicationTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sunriskcontrol" />
       <option name="PACKAGE_NAME" value="com.farmer.riskkie" />
       <option name="MAIN_CLASS_NAME" value="com.farmer.riskkie.ApplicationTest" />
-      <option name="METHOD_NAME" value="testRelus" />
+      <option name="METHOD_NAME" value="testLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SunRiskKieApplicationTests.testRelus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sun-risk-kie" />
+    <configuration name="ApplicationTest.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sunriskcontrol" />
       <option name="PACKAGE_NAME" value="com.farmer.riskkie" />
-      <option name="MAIN_CLASS_NAME" value="com.farmer.riskkie.SunRiskKieApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.farmer.riskkie.ApplicationTest" />
+      <option name="METHOD_NAME" value="testRedis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTest.testRelus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sunriskcontrol" />
+      <option name="PACKAGE_NAME" value="com.farmer.riskkie" />
+      <option name="MAIN_CLASS_NAME" value="com.farmer.riskkie.ApplicationTest" />
       <option name="METHOD_NAME" value="testRelus" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -490,10 +522,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApplicationTest.testLogin" />
+        <item itemvalue="JUnit.ApplicationTest.testRedis" />
         <item itemvalue="JUnit.ApplicationTest.testRelus" />
         <item itemvalue="Spring Boot.SunRiskKieApplication (1)" />
         <item itemvalue="JUnit.SunSentinelGatewayApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.SunRiskKieApplicationTests.testRelus" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +544,7 @@
       <workItem from="1569830114441" duration="2315000" />
       <workItem from="1570588433819" duration="19747000" />
       <workItem from="1570677831990" duration="904000" />
-      <workItem from="1570687638181" duration="9472000" />
+      <workItem from="1570687638181" duration="33494000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1569830325802</created>
@@ -527,43 +560,50 @@
       <option name="project" value="LOCAL" />
       <updated>1570690306216</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="无状态session使用">
+      <created>1570700003424</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570700003424</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 04m 14s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 11h 40m 51s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 05m 08s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 11h 43m 45s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 05m 57s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 11h 47m 13s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 07m 01s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 14h 36m 27s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 07m 37s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 14h 45m 23s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 19m 06s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 14h 45m 48s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 19m 35s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 14h 49m 01s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 21m 00s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 14h 50m 26s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 30m 47s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 14h 51m 05s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_testRelus - 2019.10.10 at 17h 31m 36s.xml">
-      <configuration name="ApplicationTest.testRelus" configurationId="JUnit" />
+    <history-entry file="ApplicationTest_testLogin - 2019.10.12 at 14h 52m 21s.xml">
+      <configuration name="ApplicationTest.testLogin" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34719000" />
+    <option name="totallyTimeSpent" value="58741000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,7 +618,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -589,13 +629,13 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6391639" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7750533" visible="true" weight="0.1650165" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31683168" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7750533" visible="true" weight="0.23762377" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39713973" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32893288" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.38063806" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.42244226" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2249467" side_tool="true" weight="0.19581959" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -606,7 +646,7 @@
       <window_info anchor="bottom" id="Debug with VisualVM" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.058635395" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.058635395" />
       <window_info anchor="right" id="Maven" order="3" weight="0.1977612" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -628,15 +668,15 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6391639" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7750533" visible="true" weight="0.19581959" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.7370737" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7750533" visible="true" weight="0.23432343" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39713973" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32893288" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.38063806" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.42244226" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2249467" side_tool="true" visible="true" weight="0.19581959" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2249467" side_tool="true" weight="0.19581959" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4989339" weight="0.2431243" />
@@ -645,8 +685,8 @@
       <window_info anchor="bottom" id="Debug with VisualVM" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.1977612" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.058635395" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.1977612" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
@@ -702,7 +742,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
     <MESSAGE value="添加基础风控模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加基础风控模块" />
+    <MESSAGE value="无状态session使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="无状态session使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -714,12 +755,6 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/sevice/KieService.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/drools/drools-core/7.22.0.Final/drools-core-7.22.0.Final.jar!/org/drools/core/impl/KnowledgeBaseImpl.class</url>
           <line>263</line>
           <properties />
@@ -729,104 +764,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-gateway/2.1.3.RELEASE/spring-cloud-starter-gateway-2.1.3.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-sentinel-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/kie/kie-spring-boot-starters/7.22.0.Final/kie-spring-boot-starters-7.22.0.Final.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/kie/kie-server-spring-boot-starter-drools/7.22.0.Final/kie-server-spring-boot-starter-drools-7.22.0.Final.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-kie/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-kie/src/main/java/com/farmer/riskkie/SunRiskKieApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/kie/kie-spring/7.22.0.Final/kie-spring-7.22.0.Final.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-kie/src/main/java/com/farmer/riskkie/sevice/KieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-kie/src/main/java/com/farmer/riskkie/domain.java" />
-    <entry file="file://$PROJECT_DIR$/sun-risk-kie/src/main/java/com/farmer/riskkie/domain/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-kie/src/main/java/com/farmer/riskkie/utils/KieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-kie/src/main/resources/rules/hello.drl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sun-risk-kie/target/classes/rules/hello.drl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -890,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sun-sentinel-gateway/src/test/java/com/farmer/gateway/SunSentinelGatewayApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -928,31 +858,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sun-risk-control/SpringBoot.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-control/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/utils/KieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/utils/RulerLogUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="33" />
-          <folding>
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/kie/kie-api/7.22.0.Final/kie-api-7.22.0.Final.jar!/org/kie/api/runtime/CommandExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1038,23 +943,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/test/java/com/farmer/riskkie/ApplicationTest.java">
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/EnumeSence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        <state relative-caret-position="200">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/utils/RulerLogUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/utils/KieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/drools/drools-core/7.22.0.Final/drools-core-7.22.0.Final.jar!/org/drools/core/phreak/RuleExecutor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.10.RELEASE/spring-data-redis-2.1.10.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="255" column="17" selection-start-line="255" selection-start-column="17" selection-end-line="255" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/service/KieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding>
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#2913#2914#0" expanded="true" />
+            <element signature="e#2960#2961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/scripting/ScriptSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.10.RELEASE/spring-data-redis-2.1.10.RELEASE.jar!/org/springframework/data/redis/core/script/DefaultRedisScript.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="78" column="38" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+          <folding>
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="e#2471#2472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/scripting/support/StaticScriptSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.10.RELEASE/spring-data-redis-2.1.10.RELEASE.jar!/org/springframework/data/redis/core/StringRedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/RedisDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/sevice/KieService.java">
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/EnumeTimeInterval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="31" />
+        <state relative-caret-position="208">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding>
-            <element signature="e#2913#2914#0" expanded="true" />
-            <element signature="e#2960#2961#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/LoginEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/domain/BaseEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/java/com/farmer/riskkie/service/DimensionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="60" column="49" lean-forward="true" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3098#3099#0" expanded="true" />
+            <element signature="e#3172#3173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/main/resources/rules/login.drl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sun-risk-control/src/test/java/com/farmer/riskkie/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
