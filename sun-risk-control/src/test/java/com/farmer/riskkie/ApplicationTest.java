@@ -2,6 +2,7 @@ package com.farmer.riskkie;
 
 import com.farmer.riskkie.controller.LoginController;
 import com.farmer.riskkie.domain.Message;
+import com.farmer.riskkie.utils.LotteryUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,6 +14,8 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @ClassName:
@@ -66,6 +69,20 @@ public class ApplicationTest {
                 }
             }
             loginController.login("192.168.12.205", "18588205431" + i);
+        }
+    }
+
+
+    @Test
+    public void testRates(){
+        List<Double> doubles = Arrays.asList(0.112, 0.23, 0.003, 0.156);
+        LotteryUtils.setOrignalRates(doubles);
+        for (int i=0;i<20;i++){
+            if (i==10){
+                doubles = Arrays.asList(0.5, 0.0008, 0.003, 0.0);
+                LotteryUtils.setOrignalRates(doubles);
+            }
+            log.info("概率={}",LotteryUtils.lottery());
         }
     }
 }
