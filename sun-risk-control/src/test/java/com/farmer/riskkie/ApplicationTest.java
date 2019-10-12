@@ -53,7 +53,6 @@ public class ApplicationTest {
     @Test
     public void testRedis() {
         stringRedisTemplate.opsForValue().set("test", "测试Redis");
-
         String test = (String) stringRedisTemplate.opsForValue().get("test");
         log.info("测试Redis:{}", test);
     }
