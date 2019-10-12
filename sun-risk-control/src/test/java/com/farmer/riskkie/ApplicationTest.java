@@ -25,8 +25,6 @@ import javax.annotation.Resource;
 @SpringBootTest(classes = {SunRiskKieApplication.class})
 public class ApplicationTest {
 
-    //    @Autowired
-//    KieService kieService;
     @Resource
     KieContainer kieContainer;
     @Resource
