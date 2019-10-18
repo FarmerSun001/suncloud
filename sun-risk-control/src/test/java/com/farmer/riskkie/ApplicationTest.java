@@ -1,8 +1,12 @@
 package com.farmer.riskkie;
 
 import com.farmer.riskkie.controller.LoginController;
+import com.farmer.riskkie.domain.Lottery;
+import com.farmer.riskkie.domain.LotteryBean;
+import com.farmer.riskkie.domain.LotterysBean;
 import com.farmer.riskkie.domain.Message;
 import com.farmer.riskkie.utils.LotteryUtils;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +18,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -75,7 +80,25 @@ public class ApplicationTest {
 
     @Test
     public void testRates(){
-        List<Double> doubles = Arrays.asList(0.112, 0.23, 0.003, 0.156);
+        LotterysBean lotterysBean = new LotterysBean();
+        List<LotteryBean> lotteryBeans = new ArrayList<>();
+        for (int i=0;i<3;i++){
+            LotteryBean lotteryBean = new LotteryBean();
+            List<Lottery> lotteries = new ArrayList<>();
+            for (int j=0;j<3;j++){
+                Lottery lottery = new Lottery(0.18*j,101*j);
+                lotteries.add(lottery);
+            }
+            lotteryBean.setLotteryTimes((i+1));
+            lotteryBean.setLotteries(lotteries);
+            lotteryBeans.add(lotteryBean);
+        }
+        lotterysBean.setLotterysBeans(lotteryBeans);
+        String toJson = new Gson().toJson(lotterysBean);
+        log.info("红包json格式:{}",toJson);
+
+
+      /*  List<Double> doubles = Arrays.asList(0.112, 0.23, 0.003, 0.156);
         LotteryUtils.setOrignalRates(doubles);
         for (int i=0;i<20;i++){
             if (i==10){
@@ -83,6 +106,6 @@ public class ApplicationTest {
                 LotteryUtils.setOrignalRates(doubles);
             }
             log.info("概率={}",LotteryUtils.lottery());
-        }
+        }*/
     }
 }

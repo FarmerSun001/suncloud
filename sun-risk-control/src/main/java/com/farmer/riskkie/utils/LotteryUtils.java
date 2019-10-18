@@ -67,6 +67,34 @@ public class LotteryUtils {
     public static void setOrignalRates(List<Double> list) {
 
         //TODO 从数据库加载红包数据
+
+        /**
+         * {lotteryTimes:[1:20,2:10,3:15]}{}{}
+         * {1:[1:20,2:10,3:15]}{1:[1:20,2:10,3:15]}{1:[1:20,2:10,3:15]}
+         *[{lotteryTimes:1,
+         *      lotterys:[
+         *          {
+         *              id:1001,
+         *              rate:30
+         *          },{
+         *              id:1002,
+         *              rate:16
+         *          }
+         * ]},
+         * {
+         *   lotteryTimes:2,
+         *   lotterys:[
+         *     {
+         *       id:1010,
+         *       rate:15
+         *     },{
+         *         id:1011,
+         *         rate:17
+         *     }
+         *   ]
+         * }
+         * ]
+         * */
 /*
         if (orignalRatesArray != null) {
             orignalRatesArray.clear();
